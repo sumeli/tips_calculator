@@ -1,0 +1,53 @@
+body{
+    background-color: #AFB9C8 ;
+}
+
+h1{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#container{
+    height: 325px;
+    width: 350px;
+    background-color: #E2BCB7;
+
+    display: grid;
+    
+
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 75px 75px 75px 75px;
+    grid-template-areas: 
+    ". bill-amount"
+    ". tip-percentage"
+    ". tip-amount"
+    ". total-bill"
+    "btn btn";
+    margin: 0 auto;
+    border: 5px solid #E99497;
+    padding: 25px;
+}
+
+#bill_amount{
+    grid-area: bill-amount;
+}
+#tip_per{
+    grid-area: tip-percentage;
+}
+#tip_amount{
+    grid-area: tip-amount;
+}
+#total_bill{
+    grid-area: total-bill;
+}
+
+.styling{
+    height: 25px;
+    width: 250px;
+}
+
+#btn{
+    grid-area: btn;
+    height: 25px;
+    width: auto;
+}
